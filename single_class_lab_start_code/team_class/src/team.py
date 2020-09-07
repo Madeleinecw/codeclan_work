@@ -9,8 +9,10 @@ class Team:
         self.players.append(player)
 
     def has_player(self, name):
+        result = False
         for player in self.players:
             if name == player:
-                return True
-            else:
-                return False
+                result = True
+                return result
+        
+        return result 
